@@ -111,21 +111,19 @@ main{
     margin-right: 100px;
 }
 
-
-.nosotros_a{
-    color: white;
-    text-decoration: none;
+button{
+    display: grid;
+    font-family: 'Glacial Indifference', sans-serif;
+    width: 150px;
+    margin: 15px;
+   border-radius: 20px;
+   background-color: black;
+   letter-spacing: 2px;
+   align-content: center;
+   justify-content: center;
 }
 
-.galeria_a{
-    color: white;
-    text-decoration: none;
-}
-
-.contactanos_a{
-    color: white;
-    text-decoration: none;
-}
+/* ? INICIO SECTION - PRODUCTOS */
 
 section.productos{
     display: grid;
@@ -147,6 +145,7 @@ section.productos{
     grid-area: h1-prod;
     align-items: end;
 }
+
 .productos-imagen{
     display: grid;
     grid-area: foto-prod;
@@ -160,22 +159,9 @@ section.productos{
     width: auto;
 }
 
-
 .productos-p{
     display: grid;
     grid-area: p-prod;
-}
-
-button{
-    display: grid;
-    font-family: 'Glacial Indifference', sans-serif;
-    width: 150px;
-    margin: 15px;
-   border-radius: 20px;
-   background-color: black;
-   letter-spacing: 2px;
-   align-content: center;
-   justify-content: center;
 }
 
 .productos-boton{
@@ -190,35 +176,50 @@ button{
     grid-area: boton-prod;
 
 }
+
+/* ? FIN DE SECTION - PRODUCTOS */
+
+/* ? INICIO SECTION - NOSOTROS */
+
 section.nosotros{
     margin: 40px;
 }
+
+.nosotros_a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ? FIN DE SECTION - NOSTROS */
+
+/* ? INICIO SECTION - GALERIA  */
 
 section.galeria{
     margin: 40px;
 }
 
-/* .galeria_presentacion{
+.galeria_a{
+    color: white;
+    text-decoration: none;
+}
+
+.galeria--presentacion{
     display: flex;
     width: 600px;
     height: 430px;
 }
 
-section img{
-    width: 0;
+div img {
+    width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
+    transition: .5 ease;
 }
 
-section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-} 
- */
+/* ? FIN DE SECTION - GALERIA */
+
+/* ? INICIO SECTION - CONTACTANOS */
+
 section.contactanos{
     background-image: url(../medios/fotos_index/contactanos.jpg);
     background-size: cover;
@@ -229,6 +230,16 @@ section.contactanos{
 
 
 }
+
+.contactanos_a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ? FIN DE SECTION - CONTACTANOS */
+
+
 
 /* FIN DEL MAIN */
 
