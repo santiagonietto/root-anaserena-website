@@ -1,0 +1,325 @@
+
+@font-face {
+    font-family: 'Glacial Indifference', sans-serif;                                       
+    src: url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+}
+
+@font-face {
+    font-family: 'Playlist', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/playlist');
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Light', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/open-sans');
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(../medios/FONDO_COMPUTADORA.png) ;
+    background-size: cover;
+    margin: 0;
+} 
+
+p{
+    font-family: 'Glacial Indifference', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1rem;                        
+}
+
+h1{
+    font-family: 'Playlist', sans-serif;
+    font-size: 10rem;
+}
+
+/* COMIENZO DEL HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+#🧭{
+    display: flex;
+    justify-content: space-between;
+}
+
+.👻{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 100px;
+    font-family: 'Glacial Indifference', sans-serif;
+    margin-top: 24px;
+}
+
+.👻 li{
+    margin-right: 75px;
+}
+
+.👻 li:last-child{
+    margin-right: 0;
+}
+
+
+.home_h{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.productos_h{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.nosotros_h{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.galeria_h{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.contacto_h{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+}
+/* FIN DEL HEADER */
+
+/* COMIENZO DEL MAIN */
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.nosotros_a{
+    color: white;
+    text-decoration: none;
+}
+
+.galeria_a{
+    color: white;
+    text-decoration: none;
+}
+
+.contactanos_a{
+    color: white;
+    text-decoration: none;
+}
+
+section.productos{
+    display: grid;
+    grid-template-areas: 
+    "h1-prod foto-prod"
+    "p-prod  foto-prod"
+    "boton-prod foto-prod" ;
+    grid-template-columns: 55% auto;
+    grid-template-rows: 55% 8% 9%;
+    column-gap: 10px;
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.productos-h1{
+    display: grid;
+    grid-area: h1-prod;
+    align-items: end;
+}
+.productos-imagen{
+    display: grid;
+    grid-area: foto-prod;
+    width: 100%;
+    height: 100%;
+    justify-items: end;
+}
+
+.lemonpai-imagen{
+    height: 650px;
+    width: auto;
+}
+
+
+.productos-p{
+    display: grid;
+    grid-area: p-prod;
+}
+
+button{
+    display: grid;
+    font-family: 'Glacial Indifference', sans-serif;
+    width: 150px;
+    margin: 15px;
+   border-radius: 20px;
+   background-color: black;
+   letter-spacing: 2px;
+   align-content: center;
+   justify-content: center;
+}
+
+.productos-boton{
+    width: 60%;
+    display: grid;
+    justify-content: center;
+}
+
+.productos_a{
+    color: white;
+    text-decoration: none;
+    grid-area: boton-prod;
+
+}
+section.nosotros{
+    margin: 40px;
+}
+
+section.galeria{
+    margin: 40px;
+}
+
+/* .galeria_presentacion{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+} 
+ */
+section.contactanos{
+    background-image: url(../medios/fotos_index/contactanos.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 1600px;
+    margin: 40px;
+    padding-left: 40px;
+
+
+}
+
+/* FIN DEL MAIN */
+
+/* COMIENZO DEL FOOTER */
+
+.politica_privacida{
+    text-decoration: none;
+    color: black;
+}
+
+.terminos_y_condiciones{
+    text-decoration: none;
+    color: black;
+}
+
+
+.cookiess{
+    text-decoration: none;
+    color: black;
+   
+}
+
+.devoluciones{
+    text-decoration: none;
+    color: black;
+    
+}
+
+footer{
+    background-color: rgba(255, 192, 203, 0.377);
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: black;
+    margin-top: 40px;
+}
+
+div.copyright{
+    font-family: 'Open Sans Light', sans-serif;
+}
+
+/* FIN DEL FOOTER */
+
+
+/* CONTACTO */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+form input{
+    width: 100%;
+    font-size: 25px;
+    background-color: rgba(255, 192, 203, 0.329);
+    border: solid rgba(0, 0, 0, 0.589);
+}
+
+form input::placeholder{
+    color:  rgba(0, 0, 0, 0.589);
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+form #Enviar{
+    color: black;
+    background-color: transparent;
+    font-size: 2rem;
+    border: 4px solid rgba(0, 0, 0, 0.589);
+    padding: 10px;
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+form textarea{
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0.329);
+    border: 4px solid rgba(0, 0, 0, 0.589);
+    font-family: 'Glacial Indifference', sans-serif;
+    color: black;
+    font-size: 2rem;
+
+}
+
+form textarea ::placeholder{
+    color:  rgba(0, 0, 0, 0.589);
+}
+
+/* FIN DE CONTACTO */
