@@ -146,7 +146,7 @@ section.productos{
     align-items: end;
 }
 
-.productos-imagen{
+div.productos-imagen{
     display: grid;
     grid-area: foto-prod;
     width: 100%;
@@ -164,13 +164,13 @@ section.productos{
     grid-area: p-prod;
 }
 
-.productos-boton{
+div.productos-boton{
     width: 60%;
     display: grid;
     justify-content: center;
 }
 
-.productos_a{
+.productos-btn{
     color: white;
     text-decoration: none;
     grid-area: boton-prod;
@@ -182,12 +182,53 @@ section.productos{
 /* ? INICIO SECTION - NOSOTROS */
 
 section.nosotros{
-    margin: 40px;
+    display: grid;
+    grid-template-areas: 
+    "img-nos h1-nos"
+    "img-nos p-nos"
+    "img-nos btn-nos";
+    grid-template-rows: 55% 13% 8%;
+    padding-top: 440px;
 }
 
-.nosotros_a{
+.nosotros-h1{
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    grid-area: h1-nos;
+}
+
+div.nosotros-imagen{
+   display: grid;
+   justify-content: center;
+    width: 88%;
+    height: 100%;
+    grid-area: img-nos;
+}
+
+.ana-imagen{
+    width: auto;
+    height: 750px;
+}
+
+
+.nosotros-p{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-area: p-nos;
+}
+
+div.nosotros-boton{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.nosotros-btn{
     color: white;
     text-decoration: none;
+    grid-area: btn-nos;
 }
 
 /* ? FIN DE SECTION - NOSTROS */
