@@ -239,7 +239,7 @@ section.galeria{
     margin: 40px;
 }
 
-.galeria_a{
+.galeria-btn{
     color: white;
     text-decoration: none;
 }
@@ -262,17 +262,28 @@ div img {
 /* ? INICIO SECTION - CONTACTANOS */
 
 section.contactanos{
-    background-image: url(../medios/fotos_index/contactanos.jpg);
-    background-size: cover;
-    height: 600px;
-    width: 1600px;
-    margin: 40px;
-    padding-left: 40px;
-
-
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.contactanos_a{
+section.contactanos::before{
+    content: "";
+    background-image: url(../medios/fotos_index/contactanos.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    filter: saturate(180%);
+    opacity: 0.4;
+}
+
+
+.contactanos-btn{
     color: white;
     text-decoration: none;
 }
