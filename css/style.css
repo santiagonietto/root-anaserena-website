@@ -113,6 +113,7 @@ main{
 
 button{
     display: grid;
+    position: relative;
     font-family: 'Glacial Indifference', sans-serif;
     width: 150px;
     margin: 15px;
@@ -211,7 +212,6 @@ div.nosotros-imagen{
     height: 750px;
 }
 
-
 .nosotros-p{
     display: grid;
     align-items: center;
@@ -242,7 +242,8 @@ section.galeria{
     "h1-gale  img-gale"
     "btn-gale img-gale";
     grid-template-rows: 45% 11%;
-    padding-top: 240px;
+    column-gap: 490px;
+    padding-top: 440px;
     width: 100%;
     height: 100%;
 }
@@ -297,6 +298,11 @@ section.contactanos{
     justify-content: center;
 }
 
+.contactanos-btn{
+    color: white;
+    text-decoration: none;
+}
+
 section.contactanos::before{
     content: "";
     background-image: url(../medios/fotos_index/contactanos.jpg);
@@ -306,14 +312,29 @@ section.contactanos::before{
     height: 800px;
     filter: saturate(180%);
     opacity: 0.4;
+} 
+
+.contactanos-h1{
+    position: relative;
+    line-height: 0.9;
 }
 
+.contactanos-p{
+    position: relative;
+}
+
+div.contactanos-boton{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 130%;
+    justify-items: center;
+}
 
 .contactanos-btn{
     color: white;
     text-decoration: none;
+    position: relative;
 }
-
 
 /* ? FIN DE SECTION - CONTACTANOS */
 
