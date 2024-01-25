@@ -16,6 +16,9 @@
     src: url('https://fonts.cdnfonts.com/css/open-sans');
 }
 
+div{
+    display: grid;
+}
 
 body{
     width: 100vw;
@@ -36,7 +39,7 @@ h1{
     font-size: 10rem;
 }
 
-/* COMIENZO DEL HEADER */
+/*  ! COMIENZO DEL HEADER */
 
 header{
     display: flex;
@@ -103,9 +106,9 @@ header{
     color: black;
     letter-spacing: 1.5px;
 }
-/* FIN DEL HEADER */
+/*  ! FIN DEL HEADER */
 
-/* COMIENZO DEL MAIN */
+/*  ! COMIENZO DEL MAIN */
 main{
     margin-left: 100px;
     margin-right: 100px;
@@ -172,10 +175,11 @@ div.productos-boton{
 }
 
 .productos-btn{
+    background-color: black;
     color: white;
-    text-decoration: none;
-    grid-area: boton-prod;
-
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 /* ? FIN DE SECTION - PRODUCTOS */
@@ -222,12 +226,14 @@ div.nosotros-imagen{
 div.nosotros-boton{
     width: 100%;
     display: grid;
-    justify-items: center;
 }
 
 .nosotros-btn{
+    background-color: black;
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     grid-area: btn-nos;
 }
 
@@ -273,8 +279,11 @@ div.galeria-boton{
 }
 
 .galeria-btn{
+    background-color: black;
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 div img {
@@ -326,13 +335,16 @@ section.contactanos::before{
 div.contactanos-boton{
     width: 100%;
     display: grid;
-    grid-template-rows: 130%;
+    grid-template-rows: 110%;
     justify-items: center;
 }
 
 .contactanos-btn{
+    background-color: black;
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     position: relative;
 }
 
@@ -340,50 +352,220 @@ div.contactanos-boton{
 
 
 
-/* FIN DEL MAIN */
+/*  ! FIN DEL MAIN */
 
-/* COMIENZO DEL FOOTER */
+/* ! COMIENZO DEL FOOTER */
 
-.politica_privacida{
+footer{
+    display: grid;
+    grid-template-areas: 
+    "seguri social mpagos  menvio"
+    "copyri copyri copyri copyri ";
+    grid-template-columns: 40% repeat(3, 20%);
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 130px;
+}
+
+
+
+section.---seguridad{
+    display: grid;
+    grid-area: seguri;
+    justify-items: center;
+    grid-template-areas: 
+    "priv"
+    "cond"
+    "cook"
+    "reem";
+    width: 100%;
+}
+
+div.--privacidad{
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "icono-priv p-priv";
+    width: 50%;
+    grid-area: priv;
+
+}
+
+.p-politicas{
+    display: grid;
+    grid-area: p-priv;
     text-decoration: none;
     color: black;
 }
 
-.terminos_y_condiciones{
+.icono-privacidad{
+    display: grid;
+    grid-area: icono-priv;
+    height: 50px;
+    width: auto;
+}
+
+
+div.--condiciones{
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "icono-condiciones p-condiciones";
+    width: 50%;
+    grid-area: cond;
+}
+
+.p-terminos{
+    display: grid;
+    grid-area: p-condiciones;
     text-decoration: none;
     color: black;
 }
 
+.icono-condiciones{
+    display: grid;
+    grid-area: icono-condiciones;
+    height: 50px;
+    width: auto;
+}
 
-.cookiess{
+
+div.--cookies{
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "icono-cookie p-cookie";
+    width: 50%;
+    grid-area: cook;
+}
+
+.p-cookiess{
+    display: grid;
+    grid-area: p-cookie;
     text-decoration: none;
     color: black;
    
 }
 
-.devoluciones{
+.icono-cookies{
+    display: grid;
+    grid-area: icono-cookie;
+    height: 50px;
+    width: auto;
+}
+
+
+div.--devoluciones{
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "icono-devoluciones p-devoluciones";
+    grid-template-columns: 33% 60%;
+    width: 100%;
+    grid-area: reem;
+}
+
+.p-devoluciones{
+    display: grid;
+    justify-items: center;
+    grid-area: p-devoluciones;
     text-decoration: none;
     color: black;
-    
 }
 
-footer{
-    background-color: rgba(255, 192, 203, 0.377);
-    display: block;
-    padding-left: 20px;
-    padding-top: 10px;
-    color: black;
-    margin-top: 40px;
+div.-div_icono_devoluciones{
+    display: grid;
+    justify-items: end;
 }
 
-div.copyright{
+.icono-devoluciones{
+    display: grid;
+    grid-area: icono-devoluciones;
+    height: 50px;
+    width: auto;
+}
+
+
+
+section.---redes_sociales{
+    display: grid;
+    grid-template-rows: 0% 15% 25%;
+    grid-area: social;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.-iconos_social{
+    width: 200px;
+    height: 50px;
+}
+
+
+
+section.---medios_pagos{
+    display: grid;
+    grid-area: mpagos;
+    justify-items: center;
+    width: 100%;
+}
+
+div.--medios_pagos{
+    display: grid;
+    grid-template-rows: 12% 25%;
+}
+
+div.-div_icono_pagos{
+    display: grid;
+    justify-items: center;
+}
+
+
+.icono-pago{
+    height: 50px;
+    width: auto;
+}
+
+.-icono_pago{
+    display: grid;
+    width: 100px;
+    height: auto;
+}
+
+
+
+section.---medios_envio{
+    display: grid;
+    grid-area: menvio;
+    justify-items: center;
+    width: 100%;
+
+}
+
+
+div.--envios{
+    display: grid;
+    grid-template-rows: 15%;
+}
+
+.-iconos_envios{
+    width: 150px;
+    height: 50px;
+}
+
+div.Copyright{
+    display: grid;
+    grid-area: copyri;
+    width: 100%;
+    justify-items: center;
     font-family: 'Open Sans Light', sans-serif;
 }
 
-/* FIN DEL FOOTER */
+/* ! FIN DEL FOOTER */
 
 
-/* CONTACTO */
+/* TODO --> CONTACTO */
 
 *{
     margin: 0;
@@ -432,4 +614,4 @@ form textarea ::placeholder{
     color:  rgba(0, 0, 0, 0.589);
 }
 
-/* FIN DE CONTACTO */
+/* TODO --> FIN DE CONTACTO */

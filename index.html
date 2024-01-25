@@ -40,7 +40,7 @@
             </div>
             <p class="productos-p">CONOCE SOBRE TODAS LAS ESPECIALIDADES DE NUESTRA PASTELERIA</p>
             <div class="productos-boton">
-                <button><a class="productos-btn" href="./paginas/productos.html">PRODUCTOS</a></button>
+                <button class="productos-btn" onclick="window.location.href='./paginas/productos.html'">PRODUCTOS</button>
             </div>
         </section>
 
@@ -51,7 +51,8 @@
             </div>
             <p class="nosotros-p">CONOCE LA HISTORIA DETRAS DE NUESTRA PASTELERIA</p>
             <div class="nosotros-boton">
-                <button><a class="nosotros-btn" href="./paginas/nosotros.html">NOSOTROS</a></button>
+                <button class="nosotros-btn" onclick="window.location.href='./paginas/nosotros.html'">NOSOTROS</button>
+
             </div>
         </section>
 
@@ -64,7 +65,8 @@
                 <img class="imagen-galeria" src="./medios/torta_selvanegra.jpeg" alt="">
             </div>  
             <div class="galeria-boton">
-                <button><a class="galeria-btn" href="./paginas/galeria.html">GALERIA</a></button>
+                <button class="galeria-btn" onclick="window.location.href='./paginas/galeria.html'">GALERIA</button>
+
             </div>
             
         </section>
@@ -73,7 +75,7 @@
             <h1 class="contactanos-h1">Contáctanos</h1>
             <p class="contactanos-p">TENEMOS LO QUE NECESITAS PARA TUS MOMENTOS UNICOS</p>
             <div class="contactanos-boton">
-                <button><a class="contactanos-btn" href="./paginas/contacto.html">CONTACTANOS</a></button>
+                <button class="contactanos-btn" onclick="window.location.href='./paginas/contacto.html'">CONTACTANOS</button>
             </div>
         </section>
 
@@ -84,38 +86,47 @@
     <!-- FIN DEL MAIN -->
 
     <footer>
-         <div>
-            <img src="./medios/iconos/politcas_privacidad.png" alt="">
-            <p><a class="politica_privacida" href="./paginas/footerpags/politicas_privacidad.html">POLITICAS DE PRIVACIDAD</a></p>
-         </div>
-         <div>
-            <img src="./medios/iconos/terminos_condiciones.png" alt="">
-            <p><a class="terminos_y_condiciones" href="./paginas/footerpags/terminos_condiciones.html">TERMINOS Y CONDICIONES</a></p>
-         </div>
-         <div>
-            <img src="./medios/iconos/cookies.png" alt="">
-            <p><a class="cookiess" href="./paginas/footerpags/politicas_cookies.html">POLITICAS DE COOKIES</a></p>
-         </div>
-         <div>
-            <img src="./medios/iconos/devolucion.png" alt="">
-            <p><a class="devoluciones" href="./paginas/footerpags/politicas_devolucionyreembolso.html">POLITICAS DE DEVOLUCION Y REEMBOLSO</a></p>
-         </div>
-        <div>
-            <p>NUESTRAS REDES SOCIALES</p>
-            <img src="./medios/iconos/facebook.png" alt="">
-            <img src="./medios/iconos/twitter.png" alt="">
-            <img class="insta" src="./medios/iconos/instagram.png" alt="">
-        </div>
-        <div>
-            <p>MEDIOS DE PAGO</p>
-            <img src="./medios/iconos/metods_pago.png" alt="">
-        </div>
-        <div>
-            <p>MEDIOS DE ENVIO</p>
-            <img src="./medios/iconos/envio-camion.png" alt="">
-            <img  src="./medios/iconos/envio.png" alt="">
-        </div>
-        
+        <section class="---seguridad" >
+            <div class="--privacidad">
+                <img class="icono-privacidad" src="./medios/iconos/politcas_privacidad.png" alt="">
+                <p><a class="p-politicas" href="./paginas/footerpags/politicas_privacidad.html">POLITICAS DE PRIVACIDAD</a></p>
+            </div>
+            <div class="--condiciones">
+                <img class="icono-condiciones" src="./medios/iconos/terminos_condiciones.png" alt="">
+                <p><a class="p-terminos" href="./paginas/footerpags/terminos_condiciones.html">TERMINOS Y CONDICIONES</a></p>
+            </div>
+            <div class="--cookies">
+                <img class="icono-cookies" src="./medios/iconos/cookies.png" alt="">
+                <p><a class="p-cookiess" href="./paginas/footerpags/politicas_cookies.html">POLITICAS DE COOKIES</a></p>
+            </div>
+            <div class="--devoluciones">
+                <div class="-div_icono_devoluciones">
+                    <img class="icono-devoluciones" src="./medios/iconos/devolucion.png" alt="">
+                </div>
+                <p><a class="p-devoluciones" href="./paginas/footerpags/politicas_devolucionyreembolso.html">POLITICAS DE DEVOLUCION Y REEMBOLSO</a></p>
+            </div>
+        </section >
+        <section class="---redes_sociales">
+            <div class="--p_sociales"></div>
+                <p class="p-sociales">NUESTRAS REDES SOCIALES</p>
+            <div class="--redes_sociales_icon">
+                <img src="./medios/iconos/redes_sociales.png" alt="" class="-iconos_social">
+            </div>
+        </section>
+        <section class="---medios_pagos">
+            <div class="--medios_pagos">
+                <p>MEDIOS DE PAGO</p>
+                <div class="-div_icono_pagos">
+                    <img class="-icono_pago" src="./medios/iconos/metods_pago.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="---medios_envio">
+            <div class="--envios">
+                <p>MEDIOS DE ENVIO</p>
+                <img src="./medios/iconos/envio.png" alt="" class="-iconos_envios">
+            </div>
+        </section>
         <div class="Copyright">
             <h4>Copyright © 2023,AnaSerenaPasteleriaCasera. Todos los derechos reservados</h4>
         </div>
