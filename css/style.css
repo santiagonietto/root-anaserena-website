@@ -1,4 +1,11 @@
 
+/* *{
+    border: solid 2px red;
+}
+   VER TAMAÑO REAL DE CADA CAJA */
+
+
+
 @font-face {
     font-family: 'Glacial Indifference', sans-serif;                                       
     src: url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
@@ -22,10 +29,11 @@ div{
 
 body{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image:url(../medios/FONDO_COMPUTADORA.png) ;
     background-size: cover;
     margin: 0;
+    overflow-x: hidden;
 } 
 
 p{
@@ -45,6 +53,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo{
