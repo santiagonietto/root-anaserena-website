@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/playlist" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
@@ -30,35 +30,23 @@
 
     <main >
 
+        <div class="div_top_image">
+            <img class="top_image_contacto" src="../medios/paginastop/contacto.png" alt="">
+        </div>
 
+        <div>
+            <p class="text_contact">Puedes contactarnos usando el formulario que se encuentra en la parte de abajo de este texto.</p>
+        </div>
 
-
-
+        <form class="form_contactos" method="post" name="formulario_contacto">
+            <input class="nombre contac siz" type="text" name="nombre" placeholder="Nombre">
+            <input class="apellido contac siz" type="text" name="apellido" placeholder="Apellido">
+            <input class="email contac siz" type="email" name="email" placeholder="Email">
+            <input class="telefono contac siz" type="number" name="telefono" placeholder="Telefono">
+            <textarea class="placeholder contac" name="comentarios" id="comentarios" cols="60" rows="10" placeholder="Escriba sus comentarios"></textarea>
+            <input class="enviar contac siz" type="submit" name="enviar" id="Enviar">
+        </form>
         
-
-
-
-        <section class="form_contactos">
-            <form method="post" name="formulario_contacto">
-                <h1 class="contact">Contacto</h1>
-                <input class="nombre contac" type="text" name="nombre" placeholder="Nombre">
-                <input class="apellido contac" type="text" name="apellido" placeholder="Apellido">
-                <input class="email contac" type="email" name="email" placeholder="Email">
-                <input class="telefono contac" type="number" name="telefono" placeholder="Telefono">
-                <textarea class="placeholder contac" name="comentarios" id="comentarios" cols="60" rows="10" placeholder="Escriba sus comentarios"></textarea>
-                <input class="enviar contac" type="submit" name="enviar" id="Enviar">
-            </form>
-        </section>
-
-
-        
-
-        
-
-
-
-
-
 
     </main>
 
