@@ -25,6 +25,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: solid 2px red;
+    margin: 0 auto;
 }
 
 
@@ -253,12 +255,12 @@ div.nosotros-boton{
 
 section.galeria{
     display: grid;
-    justify-content: space-around;
+    justify-items: center;
     grid-template-areas: 
     "h1-gale  img-gale"
     "btn-gale img-gale";
     grid-template-rows: 45% 11%;
-    column-gap: 490px;
+    grid-template-columns: 45% 55%;
     padding-top: 440px;
     width: 100%;
     height: 100%;
@@ -581,7 +583,7 @@ div.Copyright{
     border-radius: 10px;
 }
 
-
+    
 
 
 form{
