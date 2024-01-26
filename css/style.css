@@ -1025,10 +1025,6 @@ section.cartas{
 
 }
 
-
-
-
-
 .gale{
     width: 100%;
     height: 100%;
@@ -1036,6 +1032,157 @@ section.cartas{
     border-radius: 10px;
 }
 
-
-
 /*  TODO --> FIN DE GALERIA */
+
+
+/* COMIENZO MEDIAS QUERIES */
+
+@media only screen and (max-width: 480px){
+
+
+
+    
+    main{
+        margin: 0;
+    }
+
+
+
+
+    /* * HEADER */
+    header{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 0;
+        height: 50px;
+    }
+
+    #🧭{
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .👻{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .👻 li{
+        margin: 10px;
+        padding: 0;
+    }
+/* * FIN HEADER */
+
+
+
+
+/* * CONTACTO */
+    
+.text_contact{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.form_contactos{
+    height: 700px;
+}
+
+
+/* * FIN CONTACTO */
+ 
+
+
+
+/* * NOSOTROS */
+    
+.body_nos{
+    display: flex;
+    flex-direction: column;
+}
+.h2_nos{
+    display: flex;
+    font-size: 2.5rem;
+    letter-spacing: normal;
+    width: 100%;
+    justify-content: center;
+}  
+
+.div_img_nos{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.img_nos{
+    border-radius: 5px;
+}
+
+.h5_nos{
+    font-size: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* * FIN NOSOTROS */
+   
+
+
+
+/* * FOOTER */
+
+footer{
+    background-color: #FED9ED;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+section.---seguridad{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.---redes_sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.---medios_envio{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+div.--envios{
+    display: flex;
+    flex-direction: column;
+}
+
+div.Copyright{
+    font-size: 10px;
+}
+
+/* * FIN FOOTER */
+
+  
+
+
+}
