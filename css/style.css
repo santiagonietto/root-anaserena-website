@@ -32,7 +32,7 @@
 body{
     width: 100vw;
     min-height: 100vh;
-    background-image:url(../medios/FONDO_COMPUTADORA.png) ;
+    background-image:url(../medios/fondo_computadora.png) ;
     background-size: cover;
     margin: 0;
     overflow-x: hidden;
