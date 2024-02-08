@@ -1,0 +1,236 @@
+
+button{
+    display: grid;
+    position: relative;
+    font-family: $font-p;
+    width: 150px;
+    margin: 15px;
+   border-radius: 20px;
+   background-color: black;
+   letter-spacing: 2px;
+   align-content: center;
+   justify-content: center;
+}
+
+div img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5 ease;
+}
+
+
+// ? INDEX - PRODUCTOS
+
+section.productos{
+    display: grid;
+    grid-template-areas: 
+    "h1-prod foto-prod"
+    "p-prod  foto-prod"
+    "boton-prod foto-prod" ;
+    grid-template-columns: 55% auto;
+    grid-template-rows: 55% 8% 9%;
+    column-gap: 10px;
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+
+    .productos-h1{
+        display: grid;
+        grid-area: h1-prod;
+        align-items: end;
+    }
+
+    div.productos-imagen{
+        display: grid;
+        grid-area: foto-prod;
+        width: 100%;
+        height: 100%;
+        justify-items: end;
+
+        .lemonpai-imagen{
+            height: 650px;
+            width: auto;
+        }
+    }
+    
+    .productos-p{
+        display: grid;
+        grid-area: p-prod;
+    }
+    
+    div.productos-boton{
+        width: 60%;
+        display: grid;
+        justify-content: center;
+
+        .productos-btn{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+}
+
+// ? FIN INDEX - PRODUCTOS
+
+// ? INDEX - NOSOTROS
+
+section.nosotros{
+    display: grid;
+    grid-template-areas: 
+    "img-nos h1-nos"
+    "img-nos p-nos"
+    "img-nos btn-nos";
+    grid-template-rows: 55% 13% 8%;
+    padding-top: 440px;
+
+    .nosotros-h1{
+        display: grid;
+        align-items: end;
+        justify-items: center;
+        grid-area: h1-nos;
+    }
+    
+    div.nosotros-imagen{
+        display: grid;
+        justify-content: center;
+        width: 88%;
+        height: 100%;
+        grid-area: img-nos;
+
+        .ana-imagen{
+            width: auto;
+            height: 750px;
+        
+        }
+        
+    }
+
+    .nosotros-p{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-area: p-nos;
+    }
+
+    div.nosotros-boton{
+        width: 100%;
+        display: grid;
+
+        .nosotros-btn{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            grid-area: btn-nos;
+        }
+    }
+    
+}
+
+// ? FIN INDEX - NOSOTROS
+
+// ? INDEX - GALERIA
+
+section.galeria{
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: 
+    "h1-gale  img-gale"
+    "btn-gale img-gale";
+    grid-template-rows: 50% 11%;
+    grid-template-columns: 50% 50%;
+    padding-top: 440px;
+
+    .galeria-h1{
+        display: grid;
+        align-items: end;
+        grid-area: h1-gale;
+        justify-items: start;
+    }
+
+    div.galeria--presentacion{
+        grid-area: img-gale;
+        display: flex;
+        width: 100%;
+        height: 450px;
+        filter: saturate(100%);
+    }
+
+    div.galeria-boton{
+        display: grid;
+        justify-items: start;
+        grid-area: btn-gale;
+        padding-left: 120px;
+        width: 100%;
+        height: 100%;
+        
+        .galeria-btn{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+// ? FIN INDEX - GALERIA
+
+// ? INDEX - CONTACTANOS
+
+section.contactanos{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+
+    &::before{
+        content: "";
+        background-image: url(../medios/fotos_index/contactanos.jpg);
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 665px;
+        filter: saturate(180%);
+        opacity: 0.4;
+    }
+
+    .contactanos-h1{
+        position: relative;
+        line-height: 0.9;
+    }
+
+    .contactanos-p{
+        position: relative;
+    }
+
+    div.contactanos-boton{
+        width: 100%;
+        height: 65px;
+        display: grid;
+        grid-template-rows: 110%;
+        justify-items: center;
+
+        .contactanos-btn{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+        }
+    }
+}
+
+// ? FIN INDEX - CONTACTANOS

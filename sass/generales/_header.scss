@@ -1,0 +1,54 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo{
+        height: 100px;
+        width: auto;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+
+    #🧭{
+        display: flex;
+        width: 50%;
+        padding-right: 100px ;
+
+        .👻{
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-right: 100px;
+            font-family: $font-p;
+            margin-top: 24px;
+            width: 100%;
+            justify-content: space-between;
+            
+            .👻 li{
+                margin-right: 75px;
+            }
+            &:last-child{
+                margin-right: 0;
+                .home_h{
+                    @extend %li_style;
+                }
+                .productos_h{
+                    @extend %li_style;
+                }
+                .nosotros_h{
+                    @extend %li_style;
+                }
+                .galeria_h{
+                    @extend %li_style;
+                }
+                .contacto_h{
+                    @extend %li_style;
+                }
+            }
+        }
+    }
+}
+

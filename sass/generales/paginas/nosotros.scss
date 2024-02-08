@@ -1,0 +1,62 @@
+
+b{
+    font-family:'Playlist', sans-serif;
+    font-weight: 400;
+}
+
+
+.top_image_nosotros{
+    width: 100%;
+    padding-top: 20px;
+}
+
+div.body_nos{
+    display: grid;
+    grid-template-areas: 
+    "titulo    titulo"
+    "parrafo   imagen"
+    "parrafo   imagen";
+    grid-template-rows: 12% 60% 30%;
+
+    div.h2_nos{
+        grid-area: titulo;
+        font-family: $font-h1;
+        font-size: 3rem;
+        letter-spacing: 5px;
+        text-align: center;
+
+        .h2--nos{
+            font-weight: 500;
+        }
+        
+    }
+
+    div.div_img_nos{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        padding-left: 10px;
+        grid-area: imagen;
+        align-items: start;
+        
+        .img_nos{
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+    }
+
+    div.p_nos{
+        grid-area: parrafo;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        .p--nos{
+            font-family: $font-p;
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: justify;
+        }
+    }
+} 

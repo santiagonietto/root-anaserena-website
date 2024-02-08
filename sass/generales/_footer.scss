@@ -1,0 +1,194 @@
+
+footer{
+    display: grid;
+    grid-template-areas: 
+    "seguri social mpagos  menvio"
+    "copyri copyri copyri copyri ";
+    grid-template-columns: 40% repeat(3, 20%);
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 130px;
+
+    section.---seguridad{
+        display: grid;
+        grid-area: seguri;
+        justify-items: center;
+        grid-template-areas: 
+        "priv"
+        "cond"
+        "cook"
+        "reem";
+        width: 100%;
+
+        div.--privacidad{
+            display: grid;
+            align-items: center;
+            grid-template-areas: 
+            "icono-priv p-priv";
+            width: 50%;
+            grid-area: priv;
+            
+            .icono-privacidad{
+                display: grid;
+                grid-area: icono-priv;
+                height: 50px;
+                width: auto;
+            }
+             
+            .p-politicas{
+                display: grid;
+                grid-area: p-priv;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        div.--condiciones{
+            display: grid;
+            align-items: center;
+            grid-template-areas: 
+            "icono-condiciones p-condiciones";
+            width: 50%;
+            grid-area: cond;
+
+            .icono-condiciones{
+                display: grid;
+                grid-area: icono-condiciones;
+                height: 50px;
+                width: auto;
+            }
+            
+            .p-terminos{
+                display: grid;
+                grid-area: p-condiciones;
+                text-decoration: none;
+                color: black;
+            }            
+        }
+        
+        div.--cookies{
+            display: grid;
+            align-items: center;
+            grid-template-areas: 
+            "icono-cookie p-cookie";
+            width: 50%;
+            grid-area: cook;
+
+            .icono-cookies{
+                display: grid;
+                grid-area: icono-cookie;
+                height: 50px;
+                width: auto;
+            }
+
+            .p-cookiess{
+                display: grid;
+                grid-area: p-cookie;
+                text-decoration: none;
+                color: black;
+               
+            }
+        }
+
+        div.--devoluciones{
+            display: grid;
+            align-items: center;
+            grid-template-areas: 
+            "icono-devoluciones p-devoluciones";
+            grid-template-columns: 33% 60%;
+            width: 100%;
+            grid-area: reem;
+
+            div.-div_icono_devoluciones{
+                display: grid;
+                justify-items: end;
+
+                .icono-devoluciones{
+                    display: grid;
+                    grid-area: icono-devoluciones;
+                    height: 50px;
+                    width: auto;
+                }
+                
+            }
+            
+            .p-devoluciones{
+                display: grid;
+                justify-items: center;
+                grid-area: p-devoluciones;
+                text-decoration: none;
+                color: black;
+            }
+        }
+        
+    }
+
+    section.---redes_sociales{
+        display: grid;
+        grid-template-rows: 0% 15% 25%;
+        grid-area: social;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+
+        .-iconos_social{
+            width: 200px;
+            height: 50px;
+        }
+        
+    }
+
+    section.---medios_pagos{
+        display: grid;
+        grid-area: mpagos;
+        justify-items: center;
+        width: 100%;
+
+        div.--medios_pagos{
+            display: grid;
+            grid-template-rows: 12% 25%;
+        }
+        
+        div.-div_icono_pagos{
+            display: grid;
+            justify-items: center;
+
+            .-icono_pago{
+                display: grid;
+                width: 100px;
+                height: auto;
+            }
+        }
+        
+    }
+
+    section.---medios_envio{
+        display: grid;
+        grid-area: menvio;
+        justify-items: center;
+        width: 100%;
+
+        div.--envios{
+            display: grid;
+            grid-template-rows: 15%;
+
+            .-iconos_envios{
+                width: 150px;
+                height: 50px;
+            }
+            
+        }
+    
+    }
+    
+    div.Copyright{
+        display: grid;
+        grid-area: copyri;
+        width: 100%;
+        justify-items: center;
+        font-family: $font;
+    }
+
+}
+
