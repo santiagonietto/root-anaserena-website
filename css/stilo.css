@@ -86,15 +86,35 @@ header #🧭 .👻:last-child {
 }
 button {
   display: grid;
-  position: relative;
-  font-family: "Glacial Indifference", sans-serif;
-  width: 150px;
-  margin: 15px;
-  border-radius: 20px;
-  background-color: black;
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
   letter-spacing: 2px;
   align-content: center;
   justify-content: center;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
 }
 
 div img {
@@ -115,9 +135,11 @@ section.productos {
   height: 100%;
 }
 section.productos .productos-h1 {
-  display: grid;
+  display: flex;
   grid-area: h1-prod;
-  align-items: end;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 section.productos div.productos-imagen {
   display: grid;
@@ -125,22 +147,23 @@ section.productos div.productos-imagen {
   width: 100%;
   height: 100%;
   justify-items: end;
+  justify-content: center;
 }
 section.productos div.productos-imagen .lemonpai-imagen {
   height: 650px;
   width: auto;
 }
 section.productos .productos-p {
-  display: grid;
+  display: flex;
   grid-area: p-prod;
+  justify-content: center;
 }
 section.productos div.productos-boton {
-  width: 60%;
-  display: grid;
+  width: 100%;
+  display: flex;
   justify-content: center;
 }
 section.productos div.productos-boton .productos-btn {
-  background-color: black;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -179,9 +202,10 @@ section.nosotros .nosotros-p {
 section.nosotros div.nosotros-boton {
   width: 100%;
   display: grid;
+  justify-items: center;
+  justify-content: center;
 }
 section.nosotros div.nosotros-boton .nosotros-btn {
-  background-color: black;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -199,9 +223,8 @@ section.galeria {
 }
 section.galeria .galeria-h1 {
   display: grid;
-  align-items: end;
+  place-items: center;
   grid-area: h1-gale;
-  justify-items: start;
 }
 section.galeria div.galeria--presentacion {
   grid-area: img-gale;
@@ -212,14 +235,12 @@ section.galeria div.galeria--presentacion {
 }
 section.galeria div.galeria-boton {
   display: grid;
-  justify-items: start;
+  justify-items: center;
   grid-area: btn-gale;
-  padding-left: 120px;
   width: 100%;
   height: 100%;
 }
 section.galeria div.galeria-boton .galeria-btn {
-  background-color: black;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -255,13 +276,13 @@ section.contactanos .contactanos-p {
 }
 section.contactanos div.contactanos-boton {
   width: 100%;
-  height: 65px;
+  height: 80px;
+  padding-top: 30px;
   display: grid;
   grid-template-rows: 110%;
   justify-items: center;
 }
 section.contactanos div.contactanos-boton .contactanos-btn {
-  background-color: black;
   color: white;
   padding: 10px 20px;
   border: none;

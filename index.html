@@ -9,7 +9,8 @@
     <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/playlist" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
-    <link rel="stylesheet" href="/css/stilo.css">
+    <link rel="stylesheet" href="./css/stilo.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
@@ -34,7 +35,7 @@
 
 
 
-        <section class="productos">
+        <section class="productos" >
             <h1 class="productos-h1">Lemon pie</h1>
             <div class="productos-imagen">
                 <img class="lemonpai-imagen" src="./medios/fotos_index/limo_pei.png" alt="lemon pie imagen - productos"> 
@@ -45,7 +46,7 @@
             </div>
         </section>
 
-        <section class="nosotros">
+        <section class="nosotros" data-aos="fade-down">
             <h1 class="nosotros-h1">Nosotros</h1>
             <div class="nosotros-imagen">
                 <img class="ana-imagen" src="./medios/fotos_index/anabanena.png" alt="imagen de nosotros - nostros">
@@ -53,11 +54,10 @@
             <p class="nosotros-p">CONOCE LA HISTORIA DETRAS DE NUESTRA PASTELERIA</p>
             <div class="nosotros-boton">
                 <button class="nosotros-btn" onclick="window.location.href='./paginas/nosotros.html'">NOSOTROS</button>
-
             </div>
         </section>
 
-        <section class="galeria">
+        <section class="galeria" data-aos="fade-down">
             <h1 class="galeria-h1">Galeria</h1>
             <div class="galeria--presentacion">
                 <img class="imagen-galeria" src="./medios/chocolate.jpg" alt="">
@@ -67,12 +67,10 @@
             </div>  
             <div class="galeria-boton">
                 <button class="galeria-btn" onclick="window.location.href='./paginas/galeria.html'">GALERIA</button>
-
             </div>
-            
         </section>
 
-        <section class="contactanos" >
+        <section class="contactanos" data-aos="zoom-in">
             <h1 class="contactanos-h1">Contáctanos</h1>
             <p class="contactanos-p">TENEMOS LO QUE NECESITAS PARA TUS MOMENTOS UNICOS</p>
             <div class="contactanos-boton">
@@ -135,6 +133,12 @@
     </footer>
 
     <!-- FIN DEL FOOTER  -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 400,
+        duration: 1500
+    });
+  </script>
 </body>
 </html>
