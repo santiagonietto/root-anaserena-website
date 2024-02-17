@@ -192,10 +192,10 @@
         padding-left: 5%;
         padding-right: 5%;
     }
-// ! FIN - NOSOTROS
+    // ! FIN - NOSOTROS
 
 
-// ! GALERIA
+    // ! GALERIA
     .h1-gale{
         font-size: 3rem;
         margin: 30px;
@@ -289,10 +289,56 @@
         }
         
     }
-// ! FIN - GALERIA
+    // ! FIN - GALERIA
+
+    // ! ERROR 404
+    div.todo-404{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+
+        div.img--404{
+            display: flex;
+
+            .img-404{
+
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        h1.h1-404{
+            display: flex;
+            font-size: 2.2rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .p-404{
+            font-size: 1rem;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
 
 
-// ! FOOTER
+    }
+
+    div.boton-404{
+        display: flex;
+        justify-content: center;
+        
+        .btn-404{
+            margin-top: 20px;
+            margin-right: 15px;
+        }
+    }
+
+    // ! FIN - ERROR 404
+
+
+    // ! FOOTER
     footer{
         background-color: #FED9ED;
         margin: 0;
@@ -582,7 +628,53 @@
     }
     // ! FIN - GALERIA
 
-    // !
+    // ! ERROR 404
+
+    div.todo-404{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        
+
+        div.img--404{
+            display: flex;
+
+            .img-404{
+
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        h1.h1-404{
+            display: flex;
+            font-size: 3rem;
+        }
+
+        .p-404{
+            font-size: 1.5rem;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+    }
+
+    div.boton-404{
+        display: flex;
+        justify-content: center;
+
+        .btn-404{
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+    }
+
+
+
+
+    // ! FIN - ERROR 404
 
 
 
