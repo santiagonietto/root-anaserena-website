@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/playlist" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
@@ -18,7 +17,9 @@
 
 
     <header>
-        <img class="logo" src="../medios/logo_pagina.png" alt="Logo_de_la_empresa">
+        <a href="../index.html">
+            <img class="logo" src="../medios/logo_pagina.png" alt="Logo_de_la_empresa">
+        </a>
         <nav id="🧭">
             <ul class="👻">
                 <li><a class="home_h" href="../index.html">HOME</a></li>
@@ -66,43 +67,43 @@
     <footer>
         <section class="---seguridad" >
             <div class="--privacidad">
-                <img class="icono-privacidad" src="./medios/iconos/politcas_privacidad.png" alt="icono-politicas-de-privacidad">
-                <p><a class="p-politicas" href="./paginas/footerpags/politicas_privacidad.html">POLITICAS DE PRIVACIDAD</a></p>
+                <img class="icono-privacidad" src="../medios/iconos/politcas_privacidad.png" alt="icono-politicas-de-privacidad">
+                <p><a class="p-politicas" href="./error404.html">POLITICAS DE PRIVACIDAD</a></p>
             </div>
             <div class="--condiciones">
-                <img class="icono-condiciones" src="./medios/iconos/terminos_condiciones.png" alt="icono-terminos-y-condiciones">
-                <p><a class="p-terminos" href="./paginas/footerpags/terminos_condiciones.html">TERMINOS Y CONDICIONES</a></p>
+                <img class="icono-condiciones" src="../medios/iconos/terminos_condiciones.png" alt="icono-terminos-y-condiciones">
+                <p><a class="p-terminos" href="./error404.html">TERMINOS Y CONDICIONES</a></p>
             </div>
             <div class="--cookies">
-                <img class="icono-cookies" src="./medios/iconos/cookies.png" alt="icono-politicas-de-cookies">
-                <p><a class="p-cookiess" href="./paginas/footerpags/politicas_cookies.html"></a>POLITICAS DE COOKIES</p>
+                <img class="icono-cookies" src="../medios/iconos/cookies.png" alt="icono-politicas-de-cookies">
+                <p><a class="p-cookiess" href="./error404.html">POLITICAS DE COOKIES</a></p>
             </div>
             <div class="--devoluciones">
                 <div class="-div_icono_devoluciones">
-                    <img class="icono-devoluciones" src="./medios/iconos/devolucion.png" alt="icono-de-politicas-de-devolucion-y-reembolso">
+                    <img class="icono-devoluciones" src="../medios/iconos/devolucion.png" alt="icono-de-politicas-de-devolucion-y-reembolso">
                 </div>
-                <p><a class="p-devoluciones" href="./paginas/footerpags/politicas_devolucionyreembolso.html">POLITICAS DE DEVOLUCION Y REEMBOLSO</a></p>
+                <p><a class="p-devoluciones" href="./error404.html">POLITICAS DE DEVOLUCION Y REEMBOLSO</a></p>
             </div>
         </section >
         <section class="---redes_sociales">
             <div class="--p_sociales"></div>
                 <p class="p-sociales">NUESTRAS REDES SOCIALES</p>
             <div class="--redes_sociales_icon">
-                <img src="./medios/iconos/redes_sociales.png" alt="icono-redes-sociales" class="-iconos_social">
+                <img src="../medios/iconos/redes_sociales.png" alt="icono-redes-sociales" class="-iconos_social">
             </div>
         </section>
         <section class="---medios_pagos">
             <div class="--medios_pagos">
                 <p>MEDIOS DE PAGO</p>
                 <div class="-div_icono_pagos">
-                    <img class="-icono_pago" src="./medios/iconos/metods_pago.png" alt="icono-metodos-de-pago">
+                    <img class="-icono_pago" src="../medios/iconos/metods_pago.png" alt="icono-metodos-de-pago">
                 </div>
             </div>
         </section>
         <section class="---medios_envio">
             <div class="--envios">
                 <p>MEDIOS DE ENVIO</p>
-                <img src="./medios/iconos/envio.png" alt="icono-metodos-de-envio" class="-iconos_envios">
+                <img src="../medios/iconos/envio.png" alt="icono-metodos-de-envio" class="-iconos_envios">
             </div>
         </section>
         <div class="Copyright">
@@ -111,7 +112,20 @@
 
     </footer>
 
+
     <!-- FIN DEL FOOTER  -->
 
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("pink");
+            }
+            else{
+                $("header").removeClass("pink");
+            }
+        });
+    </script>
 </body>
 </html>

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Serena - Pasteleria Casera</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/playlist" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
@@ -20,8 +19,10 @@
 
 
     <header>
+        <a href="./index.html">
         <img class="logo" src="./medios/logo_pagina.png" alt="Logo_de_la_empresa">
-        <nav id="🧭">
+        </a>
+        <nav id="🧭" >
             <ul class="👻">
                 <li><a class="home_h" href="./index.html">HOME</a></li>
                 <li><a class="productos_h" href="./paginas/productos.html">PRODUCTOS</a></li>
@@ -91,21 +92,21 @@
         <section class="---seguridad" >
             <div class="--privacidad">
                 <img class="icono-privacidad" src="./medios/iconos/politcas_privacidad.png" alt="icono-politicas-de-privacidad">
-                <p><a class="p-politicas" href="./paginas/footerpags/politicas_privacidad.html">POLITICAS DE PRIVACIDAD</a></p>
+                <p><a class="p-politicas" href="./paginas/error404.html">POLITICAS DE PRIVACIDAD</a></p>
             </div>
             <div class="--condiciones">
                 <img class="icono-condiciones" src="./medios/iconos/terminos_condiciones.png" alt="icono-terminos-y-condiciones">
-                <p><a class="p-terminos" href="./paginas/footerpags/terminos_condiciones.html">TERMINOS Y CONDICIONES</a></p>
+                <p><a class="p-terminos" href="./paginas/error404.html">TERMINOS Y CONDICIONES</a></p>
             </div>
             <div class="--cookies">
                 <img class="icono-cookies" src="./medios/iconos/cookies.png" alt="icono-politicas-de-cookies">
-                <p><a class="p-cookiess" href="./paginas/footerpags/politicas_cookies.html"></a>POLITICAS DE COOKIES</p>
+                <p><a class="p-cookiess" href="./paginas/error404.html">POLITICAS DE COOKIES</a></p>
             </div>
             <div class="--devoluciones">
                 <div class="-div_icono_devoluciones">
                     <img class="icono-devoluciones" src="./medios/iconos/devolucion.png" alt="icono-de-politicas-de-devolucion-y-reembolso">
                 </div>
-                <p><a class="p-devoluciones" href="./paginas/footerpags/politicas_devolucionyreembolso.html">POLITICAS DE DEVOLUCION Y REEMBOLSO</a></p>
+                <p><a class="p-devoluciones" href="./paginas/error404.html">POLITICAS DE DEVOLUCION Y REEMBOLSO</a></p>
             </div>
         </section >
         <section class="---redes_sociales">
@@ -138,11 +139,23 @@
     <!-- FIN DEL FOOTER  -->
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+    <script>
     AOS.init({
         offset: 400,
         duration: 1500
     });
-  </script>
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("pink");
+            }
+            else{
+                $("header").removeClass("pink");
+            }
+        });
+    </script>
 </body>
 </html>
